@@ -1,8 +1,8 @@
-# [Code Screenshot](https://code-screenshot.vercel.app/)
+# [Code Screenshot](https://code-screenshot-gg.vercel.app/)
 
 A fully functional Ray.so clone (a powerful tool for sharing code snippets) with additional features. Share beautiful screenshots of your code on your social media platforms.
 
-**Project live at:** [https://code-screenshot.vercel.app/](https://code-screenshot.vercel.app/)
+**Project live at:** [https://code-screenshot-gg.vercel.app/](https://code-screenshot-gg.vercel.app/)
 
 ---
 
