@@ -18,17 +18,13 @@ const ExportOptions = ({ targetRef }: ExportOptionsProps) => {
     const title = useStore(state => state.title);
 
     const copyImage = async () => {
-        const loading = toast.loading("Copying...");
-
         try {
             const imgBlob = await toBlob(targetRef.current, { pixelRatio: 2 });
             const img = new ClipboardItem({ "image/png": imgBlob! });
             navigator.clipboard.write([img]);
 
-            toast.remove(loading);
             toast.success("Image copied to clipboard!");
         } catch (err) {
-            toast.remove(loading);
             toast.error("Something went wrong!");
         }
     }
@@ -50,8 +46,6 @@ const ExportOptions = ({ targetRef }: ExportOptionsProps) => {
     }
 
     const saveImage = async (name: string, format: "PNG" | "SVG") => {
-        const loading = toast.loading(`Exporting ${format} image...`);
-
         try {
             let imgUrl, filename;
 
@@ -74,10 +68,8 @@ const ExportOptions = ({ targetRef }: ExportOptionsProps) => {
             a.download = filename;
             a.click();
 
-            toast.remove(loading);
             toast.success("Exported successfully!");
         } catch (err) {
-            toast.remove(loading);
             toast.error("Something went wrong!");
         }
     }
