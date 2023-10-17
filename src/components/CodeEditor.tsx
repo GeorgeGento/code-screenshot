@@ -17,8 +17,6 @@ const CodeEditor = () => {
     useEffect(() => {
         if (store.autoDetectLanguage) {
             const { language } = flourite(store.code, { noUnknown: true });
-            console.log(language);
-            
             useStore.setState({ language: language.toLowerCase() || "plaintext" });
         }
     }, [store.autoDetectLanguage, store.code])
