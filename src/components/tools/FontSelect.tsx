@@ -17,7 +17,6 @@ const FontSelect = () => {
                 </SelectTrigger>
 
                 <SelectContent className='dark max-h-[500px]'>
-                    <SelectItem key='auto-detect' value='auto-detect'>Auto Detect</SelectItem>
                     {Object.entries(fonts).map(([id, font]) => (
                         <SelectItem key={id} value={id}>
                             {font.name}
