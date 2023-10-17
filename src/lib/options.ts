@@ -2,7 +2,7 @@ export const languages = {
     bash: "Bash",
     c: "C",
     "c++": "C++",
-    csharp: "C#",
+    "c#": "C#",
     clojure: "Clojure",
     crystal: "Crystal",
     css: "CSS",
@@ -173,14 +173,14 @@ export const codeSnippets = [
     },
     {
         language: "ruby",
-        code: 'class Animal\n  attr_reader :name\n\n  def initialize(name)\n    @name = name\n  end\n\n  def speak\n    raise NotImplementedError, "Subclasses must implement this method"\n  end\nend',
+        code: "def sum_eq_n?(arr, n)\n return true if arr.empty? && n == 0\n arr.product(arr).reject { |a,b| a == b }.any? { |a,b| a + b == n }\nend",
     },
     {
         language: "swift",
         code: "enum Compass {\n  case north, south, east, west\n}\nlet currentDirection = Compass.east\nprint(currentDirection)",
     },
     {
-        language: "csharp",
+        language: "c#",
         code: "using System;\nusing System.Linq;\n\nclass LINQExample {\n  static void Main() {\n    int[] numbers = { 3, 9, 2, 8, 6 };\n    var evenNumbers = numbers.Where(n => n % 2 == 0);\n    foreach (var num in evenNumbers) {\n      Console.WriteLine(num);\n    }\n  }\n}",
     },
     {

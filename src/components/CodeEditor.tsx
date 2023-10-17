@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import Editor from "react-simple-code-editor"
 import hljs from "highlight.js"
 import flourite from "flourite";
@@ -17,6 +17,8 @@ const CodeEditor = () => {
     useEffect(() => {
         if (store.autoDetectLanguage) {
             const { language } = flourite(store.code, { noUnknown: true });
+            console.log(language);
+            
             useStore.setState({ language: language.toLowerCase() || "plaintext" });
         }
     }, [store.autoDetectLanguage, store.code])
