@@ -37,7 +37,7 @@ A fully functional Ray.so clone (a powerful tool for sharing code snippets) with
 1. Clone this repo
 
 ```bash
-git clone https://github.com/nimone/code-screenshot && cd code-screenshot
+git clone https://github.com/GeorgeGento/code-screenshot && cd code-screenshot
 ```
 
 2. Install project dependecies
